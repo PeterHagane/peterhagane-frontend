@@ -1,0 +1,159 @@
+:root {
+    --white: #E8E8E8;
+    --grey: #8A8E8E;
+    --purple: #453F52;
+    --orange: #CA8957;
+    --red: #B84B46;
+}
+
+html,button,textarea,input{
+    font-family: 'Montserrat regular';
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,55,60,1) 100%);
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color:var(--white);
+}
+a:visited {
+    text-decoration: none;
+    color:var(--white);
+}
+a:hover {
+    text-decoration: none;
+    color:var(--white);
+}
+a:active {
+    text-decoration: none;
+    color:var(--white);
+}
+
+h1,h2,h3,nav{
+    color: var(--grey);
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav{}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button{
+    background-color: var(--white);
+    color: var(--purple);
+    border-radius: 3px 3px 3px 3px;
+    padding: 0.5em;
+    padding-bottom: 0.4em;
+    padding-top: 0.6em;
+    text-align: center;
+    border: 0;
+    text-transform: uppercase;
+    transition: opacity 400ms ease;
+    cursor: pointer;
+    font-size: 100%;
+    /* margin-top: 0.1em;
+    margin-bottom: 0.1em; */
+    margin: 0.1em;
+}
+
+.smallButton{
+    min-width: 6em;
+    max-width: 6em;
+
+}
+
+.largeButton{
+    min-width: 12em;
+}
+
+input {
+    background-repeat: no-repeat;
+    background-position: 0.6em center;
+    background-size: 1.2em;
+    padding: 0.5em;
+    background-color: #dddddd;
+    padding-left: 35px;
+    font-size: 100%;
+    border: none;
+    min-width: 21em;
+    border-radius: 4px 4px 4px 4px;
+    /* margin-top: 0.1em;
+    margin-bottom: 0.1em; */
+    margin: 0.1em;
+}
+
+
+.flexCenter{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.flexStart{
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexEnd{
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.flexFill{
+    flex-grow: 1;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    float: top;
+}
+
+.left{
+    float: left;
+}
+
+/* actual content should always be placed in a flexchild. Only flexchild controls margins. Other flex classes only control alignment and justification */
+.flexChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 0.5em;
+}
+
+.navBar{
+    display: flex;
+    float: top;
+    transition: opacity 0.1s;
+    background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.05) 100%);
+    height: 5em;
+    padding-left: 2%;
+    padding-right: 2%;
+}

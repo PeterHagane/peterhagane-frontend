@@ -1,0 +1,122 @@
+html,button,textarea, input{
+    font-family: 'Volte Regular';
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    color: #555;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button{
+    background-color: #dddddd;
+    color: #555;
+    border-radius: 4px 4px 4px 4px;
+    padding: 0.5em;
+    padding-bottom: 0.4em;
+    padding-top: 0.6em;
+    text-align: center;
+    border: 0;
+    text-transform: uppercase;
+    transition: opacity 400ms ease;
+    cursor: pointer;
+    font-size: 100%;
+    /* margin-top: 0.1em;
+    margin-bottom: 0.1em; */
+    margin: 0.1em;
+}
+
+.smallButton{
+    min-width: 6em;
+    max-width: 6em;
+
+}
+
+.largeButton{
+    min-width: 12em;
+
+}
+
+.undoButton{
+    color: #cc071e;
+}
+
+.redoButton{
+    background-color: #00AA33;
+}
+
+input {
+    background-repeat: no-repeat;
+    background-position: 0.6em center;
+    background-size: 1.2em;
+    padding: 0.5em;
+    background-color: #dddddd;
+    padding-left: 35px;
+    font-size: 100%;
+    border: none;
+    min-width: 21em;
+    border-radius: 4px 4px 4px 4px;
+    /* margin-top: 0.1em;
+    margin-bottom: 0.1em; */
+    margin: 0.1em;
+}
+
+#deleteInput{
+    background-image: url("../skull.png");
+}
+
+#replaceInput{
+    background-image: url("../replace.png");
+}
+
+
+.flexParent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    margin: 0.5em;
+}
+
+.flexChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.flexGrandChild{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    float: top;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    float: top;
+    background-color: #DDD;
+    height: 4em;
+    padding-left: 2%;
+
+}
