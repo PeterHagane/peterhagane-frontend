@@ -6,8 +6,11 @@
     --red: #B84B46;
 }
 
-html,button,textarea,input{
+* html,button,textarea,input{
     font-family: 'Montserrat regular';
+}
+*{
+    font-family: 'Montserrat', Fallback, sans-serif;
 }
 
 body{
