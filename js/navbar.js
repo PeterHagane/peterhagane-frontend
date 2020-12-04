@@ -29,34 +29,40 @@ var smallNav = `
     </nav>
 </flexRow>`;
 
-function throttled(){
-    var now = new Date();
-    var interval = 200;
-    var then = now.getSeconds() + interval;
-    return timeleft;
+function throttle(func, limit){
+    let flag = true;
+    return function(){
+        let context = this;
+        let args = arguments;
+        if(flag){
+            func.apply(this, arguments);
+            console.log("Update nav");
+            flag = false;
+            setTimeout(function(){
+                flag = true;
+            }, limit);
+        }
+    }
 }
 
 function checkWidth(){
     var navBar;
     if(window.innerWidth > 1080){
         navBar = bigNav;
-        console.log("bignav");
+        // console.log("bignav");
     }else if (window.innerWidth < 1081){
         navBar = smallNav;
-        console.log("smallnav");
+        // console.log("smallnav");
     }
     return navBar;
 }
 
-function setNavBar(){
+var setNavBar = function setNavBar(){
     var navbar = document.getElementById("navBar");
     navbar.setAttribute("class", "navBar flexCenter");
     navbar.innerHTML = checkWidth();
 }
 
-window.onresize = function(){
-    throttle(setNavBar(), 20000); //set navbar at a max frequency of every 250ms
-};
+setNavBar(); //inital navbar
+window.onresize = throttle(setNavBar, 250); //set navbar at a max frequency of every 250ms
 
-
-setNavBar();
