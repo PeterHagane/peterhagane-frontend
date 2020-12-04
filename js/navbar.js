@@ -1,5 +1,4 @@
-var html = `
-<flexChild class=\"flexChild\"><img src=\"img/logo.png\">
+var html = `<flexChild class=\"flexChild\"><img src=\"img/logo.png\">
 </flexChild>
 <flexChild class="flexFill">
 </flexChild>
@@ -11,7 +10,8 @@ var html = `
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
-</flexRow>"
-`
-var navbar = document.getElementsByTagName("navBar");
-navbar.appendChild(html); 
+</flexRow>`;
+
+var navbar = document.getElementById("navBar");
+navbar.setAttribute("class", "navBar flexCenter");
+navbar.innerHTML = html;
