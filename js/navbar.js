@@ -125,3 +125,5 @@ window.onresize = throttle(setNavBar, 250); //set navbar at a max frequency of e
 //     div.removeAttribute(id); //remove its id
 //     div.setAttribute("id", "nav-icon"); //in future: "nav-icon" + idcount++, make sure each new button has unique id. Then, when animating onclick later, pass correct id and animate by id.
 // }
+
+//https://www.youtube.com/watch?v=gXkqy0b4M5g
