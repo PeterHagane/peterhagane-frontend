@@ -17,15 +17,20 @@
     animation: ease-in fadeIn 0.3s;
 }
 
+
 .navBar.mobile{
   height: 20em;
   animation: ease-in slideIn 0.1s;
-  align-content: flex-start;
-  align-items: flex-start;
 }
 .navBar.mobile .flexChild{
   /* margin-top: auto; */
 }
+
+#navRow1{
+  flex-grow: 1;
+  min-width: 100%;
+}
+
 
 li{
     display: flex;
@@ -61,11 +66,6 @@ li{
   }
 }
 
-
-.navBar img{
-    max-height: 4em;
-}
-
 /* 48em = 768px */
 /* mobile first */
 @media screen and (min-width: 48em) {
@@ -84,9 +84,17 @@ li{
   .menu{
     display: none;
   }
+
+  .navBar{
+  flex-direction: column;
+  }
   /* .flexRow .flexCenter{
     display: none;
   } */
+}
+
+.navBar img{
+  max-height: 4em;
 }
 
 
@@ -95,11 +103,12 @@ li{
 .menu-btn {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
   width: 3em;
   height: 3em;
-  /* margin: 1em; */
   cursor: pointer;
   transition: all .3s ease-in-out;
   animation: ease-in fadeIn 0.3s;

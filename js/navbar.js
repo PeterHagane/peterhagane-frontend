@@ -15,15 +15,18 @@ var menuButton = `
 `;
 
 var navBar = `
-<flexChild class="flexChild">
-    <img src="img/logo.png">
-</flexChild>
-<flexChild class="flexFill">
-</flexChild>
-<flexChild class="flexChild">
+<flexRow class="flexRow " id="navRow1">
+    <flexChild class="flexChild">
+        <img src="img/logo.png">
+    </flexChild>
+    <flexChild class="flexFill">
+    </flexChild>
+    <flexChild class="flexChild flexCenter">
     ${menuButton}
-</flexChild>
-<flexRow class="flexRow flexCenter">
+    </flexChild>
+</flexRow>
+
+<flexRow class="flexRow flexCenter" id="navRow2">
     <nav>
         ${menuItems}
     </nav>
