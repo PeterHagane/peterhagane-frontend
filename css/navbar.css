@@ -1,3 +1,11 @@
+:root {
+  --white: #E8E8E8;
+  --grey: #8A8E8E;
+  --purple: #453F52;
+  --orange: #CA8957;
+  --red: #B84B46;
+}
+
 .navBar{
     display: flex;
     float: top;
@@ -7,6 +15,16 @@
     padding-left: 0.7em;
     padding-right: 0.7em;
     animation: ease-in fadeIn 0.3s;
+}
+
+.navBar.mobile{
+  height: 20em;
+  animation: ease-in slideIn 0.1s;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.navBar.mobile .flexChild{
+  /* margin-top: auto; */
 }
 
 li{
@@ -26,6 +44,23 @@ li{
   100% {opacity:1;}
   0% {opacity:0;}
 }
+@keyframes slideIn {
+  from {
+  height: 5em;
+  }
+  to {
+  height: 20em;
+  }
+}
+@keyframes slideOut {
+  from {
+  height: 20em;
+  }
+  to {
+  height: 5em;
+  }
+}
+
 
 .navBar img{
     max-height: 4em;
@@ -64,17 +99,20 @@ li{
   align-items: center;
   width: 3em;
   height: 3em;
+  /* margin: 1em; */
   cursor: pointer;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
+  animation: ease-in fadeIn 0.3s;
   /* border: 3px solid #fff; */
 }
 .menu-btn__burger {
   width: 3em;
   height: 2px;
-  background: #fff;
+  background: var(--white);
   border-radius: 1px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
-  transition: all .5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  animation: ease-in fadeIn 0.3s;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after {
@@ -82,10 +120,11 @@ li{
   position: absolute;
   width: 3em;
   height: 2px;
-  background: #fff;
+  background: var(--white);
   border-radius: 1px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
-  transition: all .5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  animation: ease-in fadeIn 0.3s;
 }
 .menu-btn__burger::before {
   transform: translateY(-16px);
@@ -112,4 +151,3 @@ li{
 .menu-btn.open li::after{
 /* animate menu */
 }
-

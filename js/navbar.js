@@ -6,13 +6,13 @@ var menuItems = `
 <li><a href="#Projects">Projects</a></li>
 <li><a href="#Contact">Contact</a></li>
 </ul>
-`
+`;
 
 var menuButton = `
 <div class="menu-btn">
 <div class="menu-btn__burger"></div>
 </div>
-`
+`;
 
 var navBar = `
 <flexChild class="flexChild">
@@ -27,7 +27,8 @@ var navBar = `
     <nav>
         ${menuItems}
     </nav>
-</flexRow>`;
+</flexRow>
+`;
 
 var setNavBar = function setNavBar(){
     var navbarelement = document.getElementById("navBar");
@@ -36,16 +37,11 @@ var setNavBar = function setNavBar(){
 }
 setNavBar();
 
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector(".menu");
-const links = document.querySelectorAll(".menu li");
-var menuOpen = false;
+const menuBtn = document.querySelector(".menu-btn");
+const mobileNav = document.querySelector("navBar");
 menuBtn.addEventListener('click', () => {
-    menu.classList.toggle("toggle");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
     menuBtn.classList.toggle("open");
+    mobileNav.classList.toggle("mobile");
 });
 
 //
