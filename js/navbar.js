@@ -40,11 +40,13 @@ var setNavBar = function setNavBar(){
 }
 setNavBar();
 
+const menu = document.querySelector(".menu");
 const menuBtn = document.querySelector(".menu-btn");
 const mobileNav = document.querySelector("navBar");
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle("open");
     mobileNav.classList.toggle("mobile");
+    // menu.classList.toggle("menu");    
 });
 
 //

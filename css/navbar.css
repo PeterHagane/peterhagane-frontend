@@ -28,7 +28,7 @@
 
 #navRow1{
   flex-grow: 1;
-  min-width: 100%;
+  width: 100%;
 }
 
 
