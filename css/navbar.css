@@ -6,113 +6,113 @@
   --red: #B84B46;
 }
 
-.navBar{
+.navbarcontainer{
     display: flex;
     float: top;
     transition: opacity 0.1s;
-    background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.15) 100%);
-    height: 5em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
     animation: ease-in fadeIn 0.3s;
+    background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.15) 100%);
 }
 
-.navBar.mobile{
-  height: 15em;
+.navbarright{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: auto;
+  margin: 0em 1.5em 0em 0em;
 }
 
-.navBar.mobile #navRow2{
-  height: 100em;
-  
-}
-
-.navBar.mobile #navRow2 .menu{
-  height: 100em;
-  animation: ease-in slideIn 11s;
-  display: visible;
-}
-
-.navBar.mobile .flexChild{
-  /* margin-top: auto; */
-}
-
-#navRow1{
+.navbarleft{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   flex-grow: 1;
-  width: 100%;
-}
-
-
-li{
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    margin: 0.5em;
-    animation: ease-in fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-@keyframes fadeOut {
-  100% {opacity:1;}
-  0% {opacity:0;}
-}
-@keyframes slideIn {
-  from {
-  height: 0em;
-  }
-  to {
-  height: 20em;
-  }
-}
-@keyframes slideOut {
-  from {
-  height: 20em;
-  }
-  to {
   height: 5em;
-  }
+  margin: 0em 1em 0em 0.5em;
 }
 
-/* 48em = 768px */
-/* mobile first */
 @media screen and (min-width: 48em) {
-  .menu{
+  .navbarright{
     display: visible;
   }
   .menu-btn {
-    display: none;
+    display: visible;
   }
   .menu-btn__burger {
     display: none;
   }
+  .navbarcontainer{
+    flex-direction: row;
+    
+  }
 }
 
 @media screen and (max-width: 48em) {
-  .menu{
-    display: none;
+  .navbarright{
+    height: 0;
+    align-items: center;
   }
-  .navBar{
+  .navbarright.ease-out{
+    animation: ease-out slideOut 0.2s;
+  }
+  .navbarright ul{
+    display:none;
+  }
+  .navbarright.open{
+    display: block;
+    flex-direction: column;
+    animation: ease-in slideIn 0.1s;
+    height: auto;
+    align-items: center;
+  }
+  .navbarright.open ul{
+    display: block;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu li{
+    height: 2.5em;
+  }
+
+  .navbarcontainer{
   flex-direction: column;
   }
+  
   /* .flexRow .flexCenter{
     display: none;
   } */
 }
 
-.navBar img{
-  max-height: 4em;
+.menu li{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    margin: 0.5em;
+    animation: ease-in fadeIn 0.5s;
+    user-select: none;
 }
 
-
-/* menu button */
-
-.menu-btn {
-  position: relative;
+.flexfill{
   display: flex;
-  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* 48em = 768px */
+/* mobile first */
+
+.navbarcontainer img{
+  max-height: 4em;
+  margin-left: 1em;
+}
+/* menu button */
+.menu-btn {
+  display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -123,6 +123,7 @@ li{
   animation: ease-in fadeIn 0.3s;
   /* border: 3px solid #fff; */
 }
+
 .menu-btn__burger {
   width: 3em;
   height: 2px;
@@ -168,4 +169,30 @@ li{
   }
 .menu-btn.open li::after{
 /* animate menu */
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fadeOut {
+  100% {opacity:1;}
+  0% {opacity:0;}
+}
+@keyframes slideIn {
+  from {
+  height: 0em;
+  }
+  to {
+  height: 137px;
+  }
+}
+@keyframes slideOut {
+  from {
+  height: 137px;
+  }
+  to {
+  height: 0;
+  }
 }
