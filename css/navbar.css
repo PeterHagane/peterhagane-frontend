@@ -17,11 +17,21 @@
     animation: ease-in fadeIn 0.3s;
 }
 
-
 .navBar.mobile{
-  height: 20em;
-  animation: ease-in slideIn 0.1s;
+  height: 15em;
 }
+
+.navBar.mobile #navRow2{
+  height: 100em;
+  
+}
+
+.navBar.mobile #navRow2 .menu{
+  height: 100em;
+  animation: ease-in slideIn 11s;
+  display: visible;
+}
+
 .navBar.mobile .flexChild{
   /* margin-top: auto; */
 }
@@ -51,7 +61,7 @@ li{
 }
 @keyframes slideIn {
   from {
-  height: 5em;
+  height: 0em;
   }
   to {
   height: 20em;
@@ -84,7 +94,6 @@ li{
   .menu{
     display: none;
   }
-
   .navBar{
   flex-direction: column;
   }
