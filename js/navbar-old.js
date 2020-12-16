@@ -1,3 +1,5 @@
+//deprecated navbar
+
 var html;
 var open = false;
 var menuItems = `
