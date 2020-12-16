@@ -18,6 +18,12 @@ var html = `
 </ul>
 </div>
 `
+var setNavBar = function setNavBar(){
+    var navbarelement = document.getElementById("navbarcontainer");
+    navbarelement.setAttribute("class", "navbarcontainer");
+    navbarelement.innerHTML = html;
+}
+setNavBar();
 
 const menuBtn = document.querySelector(".menu-btn");
 const navRight = document.querySelector(".navbarright");
@@ -27,8 +33,3 @@ menuBtn.addEventListener('click', () => {
     navRight.classList.add("ease-out");
 });
 
-function setNavBar(){
-    var navbarelement = document.getElementsByClassName("navbarcontainer");
-    navbarelement.innerHTML = navBar;
-}
-setNavBar();
