@@ -1,0 +1,39 @@
+::-webkit-scrollbar{
+    width: 14px;
+    background:rgb(26, 47, 51);
+}
+
+@media screen and (max-width: 48em) {
+    ::-webkit-scrollbar{
+        display: none;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+    
+}
+
+::-webkit-scrollbar-button{
+    
+}
+
+::-webkit-scrollbar-track {
+ 
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track-piece{
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background: rgba(0, 0, 255, 1);
+}
+::-webkit-scrollbar-corner{
+
+}
+
+::-webkit-resizer{
+
+}
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,55,60,1) 100%);  */
+/*     background: rgba(0, 0, 255, 1); */

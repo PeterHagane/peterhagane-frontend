@@ -33,3 +33,4 @@ menuBtn.addEventListener('click', () => {
     navRight.classList.add("ease-out");
 });
 
+//https://www.youtube.com/watch?v=huVJW23JHKQ
