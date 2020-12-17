@@ -1,0 +1,23 @@
+.parallax-container {
+  perspective: 2px;
+
+}
+
+.foreground {
+  /* Uncomment the code below to see the difference the scale property makes! */
+  /* transform: translateZ(3px); */
+  /* transform: translateZ(0) scale(1); */
+}
+
+#bgi1{
+  background-image: url("../img/background1.JPG");
+  background-size: 100% auto;
+  background-repeat: no-repeat; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.8;
+  z-index: -1;
+}

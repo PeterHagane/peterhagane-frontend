@@ -7,6 +7,9 @@
 }
 
 .navbarcontainer{
+    z-index: 10;
+    top: 0;
+    left: 0;
     display: flex;
     float: top;
     transition: opacity 0.1s;
