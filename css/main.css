@@ -13,9 +13,14 @@
     font-family: 'Montserrat', Fallback, sans-serif;
 }
 
+.clip-text{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 body{
-    /* background: rgb(2,0,36); */
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,55,60,1) 100%);
+    background: rgb(255,255,250);
+    /* background: linear-gradient(90deg, rgb(35, 31, 104) 0%, rgb(47, 94, 102) 100%); */
     margin: 0;
 }
 
@@ -40,6 +45,12 @@ h1,h2,h3,nav{
     color: var(--grey);
     margin-top: 0em;
     margin-bottom: 0em;
+}
+
+h1{
+    color: white;
+    background: rgb(182, 138, 141);
+    mix-blend-mode: multiply;
 }
 
 ul{
