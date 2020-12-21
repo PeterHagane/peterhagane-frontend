@@ -1,7 +1,7 @@
 var html = `
 <div class="navbarleft">
 <div>
-    <img src="img/logo.svg">
+    <img class="dropshadow" src="img/logo.svg">
 </div>
 <div class="flexfill">
 </div>
