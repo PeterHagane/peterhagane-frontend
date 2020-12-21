@@ -1,8 +1,7 @@
 ::-webkit-scrollbar{
     width: 14px;
-    background:rgb(26, 47, 51);
+    background:rgb(47, 94, 102);
 }
-
 @media screen and (max-width: 48em) {
     ::-webkit-scrollbar{
         display: none;
@@ -17,16 +16,16 @@
 }
 
 ::-webkit-scrollbar-track {
- 
-    border-radius: 3px;
+  background: rgb(204, 216, 218);
+    border-radius: 0px;
 }
 ::-webkit-scrollbar-track-piece{
 
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 1px;
-    background: rgba(0, 0, 255, 1);
+    border-radius: 0px;
+    background: rgba(0, 0, 255, 0);
 }
 ::-webkit-scrollbar-corner{
 

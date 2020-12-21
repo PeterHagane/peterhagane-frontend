@@ -1,7 +1,7 @@
 var html = `
 <div class="navbarleft">
 <div>
-    <img src="img/logo.png">
+    <img src="img/logo.svg">
 </div>
 <div class="flexfill">
 </div>
@@ -28,7 +28,7 @@ setNavBar();
 const menuBtn = document.querySelector(".menu-btn");
 const navRight = document.querySelector(".navbarright");
 menuBtn.addEventListener('click', () => {
-    // menuBtn.classList.toggle("open");
+    menuBtn.classList.toggle("open");
     navRight.classList.toggle("open"); 
     navRight.classList.add("ease-out");
 });
