@@ -43,7 +43,7 @@ a:active {
     color:var(--white);
 }
 
-h1,h2,h3,nav{
+h1,h2,h3,h4,h6,nav{
     color: var(--grey);
     margin-top: 0em;
     margin-bottom: 0em;
@@ -51,7 +51,26 @@ h1,h2,h3,nav{
 }
 
 h1{
-
+    font-size: 10vw;
+    margin-left: -0.2vw;
+}
+h2{
+    font-size: 8vw;
+    margin-left: -0.1vw;
+}
+h3{
+    font-size: 6vw;
+}
+h4{
+    font-size: 4vw;
+    margin-left: 0.2vw;
+}
+h5{
+    font-size: 3vw;
+}
+h6{
+    font-size: 2vw;
+    
 }
 
 .text-gr{
@@ -64,7 +83,7 @@ h1{
     -webkit-background-clip: text;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    font-size: 4em;
+    /* font-size: 4em; */
     font-weight: bold;
     text-align: left;
   }
@@ -243,3 +262,9 @@ input {
     transform: rotate(360deg);
   }
 }
+
+.dropshadow{
+    width: 150px;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0,0.5));
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0,0.5));
+  }
