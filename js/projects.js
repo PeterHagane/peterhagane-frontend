@@ -10,11 +10,23 @@ var projects = [
         purl: "",
         ptitle:"Title2",
         ptags: {tags: ["JS", "HTML"]}
+    },
+    {
+        pimg: "img/textgraphic.svg",
+        purl: "",
+        ptitle:"Title",
+        ptags: {tags: ["JS", "C#"]}
+    },
+    {
+        pimg: "img/textgraphic.svg",
+        purl: "",
+        ptitle:"Title2",
+        ptags: {tags: ["JS", "HTML"]}
     }    
 ]
 
 var projectHTML = `
-<div class="flexRow">
+<div class="flexRow flexStart">
     ${setProjects()}
 </div>
 `
@@ -22,7 +34,7 @@ function setProjects() {
     var pHTML = ``;
     for (var project in projects) {
         pHTML += `
-            <div class="flexColumn">
+            <div class="card flexColumn">
             <img src="${projects[project].pimg}"></img>
             <p>${projects[project].ptitle}</p>
             <p>${projects[project].ptags.tags}</p>
@@ -34,7 +46,7 @@ function setProjects() {
 
 var setProjects = function setProjects(){
     var projects = document.getElementById("projects");
-    projects.setAttribute("class", "flexColumn text-gr flexCenter");
+    projects.setAttribute("class", "flexColumn text-gr");
     projects.innerHTML = projectHTML;
 }
 setProjects();

@@ -1,24 +1,37 @@
+#contentcontainer{
+    
+}
+
 #about{
 
 
 }
 
 #projects{
-
-
+ margin-left: 2vh;
+ margin-right: 2vh;
 }
 
 #contact{
 
-
 }
 
 #splash{
-    width: 100%;
+    margin-left: 1vh;
+}
+
+#splash, #about, #projects, #contact{
+    /* width: 100%; */
+    max-width: 100%;
 }
 
 #projects img{
-    max-width: 1em;
+    width: 100%;
+    
+}
+
+.card{
+ width: 50%;
 }
 
 .graphic{
@@ -27,7 +40,15 @@
     shape-outside: polygon(0% 100%, 0% 100%, 0% 100%);
 }
 
-
 @media screen and (min-width: 48em){
+  #splash{
 
+  }
+  #projects{
+    margin-left: 15vh;
+    margin-right: 15vh;
+   }
+   .card{
+    width: 25%;
+   }
 }

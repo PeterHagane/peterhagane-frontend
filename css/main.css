@@ -177,7 +177,7 @@ input {
 .flexRow{
     display: flex;
     flex-direction: row;
-    /* flex-flow: row wrap; */
+    flex-flow: row wrap;
     /* max-width: 1000px; */
 }
 
