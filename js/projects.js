@@ -26,7 +26,7 @@ var projects = [
 ]
 
 var projectHTML = `
-<div class="flexRow flexStart">
+<div class="flexRow flexCenter">
     ${setProjects()}
 </div>
 `
@@ -36,7 +36,7 @@ function setProjects() {
         pHTML += `
             <div class="card flexColumn">
             <img src="${projects[project].pimg}"></img>
-            <p>${projects[project].ptitle}</p>
+            <h5>${projects[project].ptitle}</h5>
             <p>${projects[project].ptags.tags}</p>
             </div>
             `
