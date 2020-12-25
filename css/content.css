@@ -44,10 +44,12 @@
 }
 
 .card{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 1em 1em 1em 1em;
     margin-bottom: 1em;
     border-radius: 0.5em;
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
 }
 
 @media screen and (min-width: 40em) {
@@ -68,6 +70,15 @@
     .card {
         flex: 0 1 calc(25% - 2.5em);
     }
+}
+
+.tag{
+    margin: 2px 4px 2px 0px;
+    padding: 3px 3px 4px 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--grey);
+    -webkit-text-fill-color: var(--grey);
+    font-weight: 400;
 }
  
 
