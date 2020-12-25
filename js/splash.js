@@ -1,5 +1,5 @@
 var splashHTML = `
-<div class="flexChild">
+<div class="flexColumn ">
     <h3>
     Design & Development
     </h3>

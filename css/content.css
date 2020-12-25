@@ -1,15 +1,20 @@
 #contentcontainer{
-    
+    max-width: 1024px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* justify-content: center;
+    align-content: center;
+    align-items: center; */
 }
 
 #about{
 
-
 }
 
 #projects{
- margin-left: 2vh;
- margin-right: 2vh;
+
 }
 
 #contact{
@@ -17,22 +22,19 @@
 }
 
 #splash{
-    margin-left: 1vh;
+
 }
 
 #splash, #about, #projects, #contact{
-    /* width: 100%; */
     max-width: 100%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+        
 }
 
 #projects img{
     width: 100%;
     
-}
-
-.card{
- width: 45%;
- margin: 1em;
 }
 
 .graphic{
@@ -41,15 +43,36 @@
     shape-outside: polygon(0% 100%, 0% 100%, 0% 100%);
 }
 
-@media screen and (min-width: 48em){
-  #splash{
-
-  }
-  #projects{
-    margin-left: 15vh;
-    margin-right: 15vh;
-   }
-   .card{
-    width: 25%;
-   }
+.card{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
 }
+
+@media screen and (min-width: 40em) {
+    .card {
+        flex: 0 1 calc(50% - 2.5em);
+        
+    }
+    .cards{
+        
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    
+}
+@media screen and (min-width: 60em) {
+
+    .card {
+        flex: 0 1 calc(25% - 2.5em);
+    }
+}
+ 
+
+/* @media screen and (min-width: 52em) {
+    .centered {
+        
+    }
+} */
