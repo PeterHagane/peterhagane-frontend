@@ -43,9 +43,17 @@
     shape-outside: polygon(0% 100%, 0% 100%, 0% 100%);
 }
 
+.cards{
+
+}
+
 .card{
     background-color: rgba(255, 255, 255, 0.1);
+    height: auto;
+    
     padding: 1em 1em 1em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-bottom: 1em;
     border-radius: 0.5em;
     color: var(--white);
@@ -58,10 +66,10 @@
         
     }
     .cards{
-        
-        display: flex;
+       display: flex;
        flex-wrap: wrap;
-       justify-content: space-between;
+       justify-content: center;
+       align-items: stretch;
     }
     
 }
