@@ -8,9 +8,9 @@ window.onload = async function overlay(){
     //checks if all images are loaded and simulates click, fading out loading overlay before displaying none. Requires at least one picture on your site to work...
         var image = document.querySelector("img");
         if(image.complete && image.naturalHeight !== 0){
+            await delay(300);
             loading.click();
-            await delay(1000);
         };
-    await delay(1000);
+    await delay(300);
     loading.style.display = "none";
 }

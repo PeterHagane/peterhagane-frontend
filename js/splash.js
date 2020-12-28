@@ -1,14 +1,11 @@
 var splashHTML = `
 <div class="flexColumn"> 
 <img id="splashlogo" src="img/logo.svg">
-    <h2>
-    Peter Hagane
-    </h2>
     <h4>
     Design & Development
     </h4>
     <div class="flexRow">
-    <ul class="splashmenu">
+    <ul id="splashmenu" class="splashmenu">
     <li><a href="#About">About</a></li>
     <li><a href="#Projects">Projects</a></li>
     <li><a href="#Contact">Contact</a></li>

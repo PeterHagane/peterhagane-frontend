@@ -10,13 +10,15 @@
 }
 
 #splash{
-    min-height: 70vh; 
-    /* calc(50vh); */
+    height: 100vh;
+    animation: ease-in fadeIn 0.5s;
 }
 
-text {
-    fill: url(#pattern);
-    }
+#splash.short{
+    height: 55vh;
+    animation: normal;
+    animation: ease-out slideOut 1s;
+}
 
 #splash h1,h2,h3,h4,h5,h6,div,img{
     margin-left: auto;
@@ -51,6 +53,7 @@ text {
     /* width: 70%; */
     max-height: 20vh;
 }
+
 
 #about{
 
@@ -134,3 +137,21 @@ text {
         
     }
 } */
+
+@keyframes slideIn {
+    from {
+    height: 0em;
+    }
+    to {
+    height: 137px;
+    }
+  }
+  @keyframes slideOut {
+    from {
+    height: 100vh;
+    }
+    to {
+    height: 55vh;
+    }
+  }
+  

@@ -18,12 +18,12 @@ var html = `
 </ul>
 </div>
 `
-var navbarelement = document.getElementById("navbarcontainer");
+var navbarcontainer = document.getElementById("navbarcontainer");
 
 var setNavBar = function setNavBar(){
-    // var navbarelement = document.getElementById("navbarcontainer");
-    navbarelement.setAttribute("class", "navbarcontainer");
-    navbarelement.innerHTML = html;
+    // var navbarcontainer = document.getElementById("navbarcontainer");
+    navbarcontainer.setAttribute("class", "navbarcontainer hidden");
+    navbarcontainer.innerHTML = html;
 }
 setNavBar();
 
@@ -36,22 +36,26 @@ menuBtn.addEventListener('click', () => {
 });
 
 //handle hide/show on scroll
-// The element we will observe
 var splash = document.getElementById("splash");
+var projects = document.getElementById("projects");
+var splashmenu = document.getElementById("splashmenu");
+// The element we will observe
 const scrollelement = document.getElementById("scrollelement");
 
 var unscrolled = function(){
-    navbarelement.classList.toggle("hidden");
-    splash.classList.toggle("fullheight");
+    navbarcontainer.classList.add("hidden");
+    projects.classList.remove("slideIn");
+    splashmenu.classList.add("hidden");
+    // navbarcontainer.classList.toggle("hidden");
+    // splash.classList.toggle("fullheight");
+    // splash.target.style.display = "none";
 
-    // navbarelement.target.style.display = "hidden";
-    // splash.target.style.height = "100vh";
+
 }
 var scrolled = function(){
-    navbarelement.classList.toggle("hidden");
-    splash.classList.toggle("fullheight");
-    // navbarelement.target.style.display = "flex";
-    // splash.target.style.height = "50vh";
+    console.log("Scrolling down - show navbar, show projects, hide menu, reduce height of splash");
+    navbarcontainer.classList.remove("hidden");
+    splash.classList.add("short");
 }
 
 
@@ -71,7 +75,7 @@ const callback = function( entries, observer ) {
   console.log(observedelement);
 
   // Add or remove the blur.
-  ! observedelement.isIntersecting ?  scrolled : unscrolled
+  observedelement.isIntersecting ? unscrolled() : scrolled();
 };
 
 const observer = new IntersectionObserver( callback, options );

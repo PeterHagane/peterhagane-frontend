@@ -12,11 +12,11 @@
 }
 
 ::-webkit-scrollbar-button{
-    
+    background: rgba(50, 63, 65, 0.1);
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(204, 216, 218);
+  background: rgba(50, 63, 65, 0.1);
     border-radius: 0px;
 }
 ::-webkit-scrollbar-track-piece{
@@ -25,14 +25,16 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background: rgba(0, 0, 255, 0);
+    background: rgba(50, 63, 65, 0);
+    height: 15px;
+    /* background: rgba(0, 0, 255, 0); */
 }
 ::-webkit-scrollbar-corner{
-
+    background: rgba(50, 63, 65, 0.1);
 }
 
 ::-webkit-resizer{
-
+    background: rgba(50, 63, 65, 0.1);
 }
 /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,55,60,1) 100%);  */
 /*     background: rgba(0, 0, 255, 1); */
