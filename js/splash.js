@@ -1,6 +1,6 @@
 var splashHTML = `
-<div class="flexColumn "> 
-    <img id="splashlogo" src="img/logo.svg">
+<div class="flexColumn"> 
+<img id="splashlogo" src="img/logo.svg">
     <h4>
     Design & Development
     </h4>
@@ -15,6 +15,8 @@ var splashHTML = `
 
 `
 
+    // <img id="splashlogo" src="img/logo.svg">
+
 var setSplash = function setSplash(){
     var splash = document.getElementById("splash");
     splash.setAttribute("class", "flexColumn text-gr");
@@ -22,11 +24,4 @@ var setSplash = function setSplash(){
 }
 setSplash();
 
-{/* <h4>
-By
-</h4>
-<h1>
-    PETER HAGANE
-</h1>
-</div>
-<div class="flexRow"> */}
+//<h4>By</h4><h1>PETER HAGANE</h1></div><div class="flexRow">

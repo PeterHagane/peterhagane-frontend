@@ -14,6 +14,10 @@
     /* calc(50vh); */
 }
 
+text {
+    fill: url(#pattern);
+    }
+
 #splash h1,h2,h3,h4,h5,h6,div,img{
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +35,7 @@
 }
 
 .splashmenu li{
-    height: 2.5em;
+      height: 2.5em;
       display: flex;
       justify-content: flex-start;
       align-content: flex-start;
@@ -39,6 +43,8 @@
       margin: 0.5em;
       animation: ease-in fadeIn 0.5s;
       user-select: none;
+      font-weight: 400;
+      font-size: 18px;
   }
 
 #splashlogo{
