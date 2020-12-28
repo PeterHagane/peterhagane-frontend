@@ -10,7 +10,8 @@
 }
 
 #splash{
-    height: 40vh;
+    min-height: 70vh; 
+    /* calc(50vh); */
 }
 
 #splash h1,h2,h3,h4,h5,h6,div,img{

@@ -4,16 +4,15 @@ var splashHTML = `
     <h4>
     Design & Development
     </h4>
-    </div>
-    <!-- <img src="img/textgraphic.svg"></img> -->
     <div class=flexRow>
     <ul class="splashmenu">
     <li><a href="#About">About</a></li>
     <li><a href="#Projects">Projects</a></li>
     <li><a href="#Contact">Contact</a></li>
     </ul>
-</div>
-</div>
+    </div>
+</div> 
+
 `
 
 var setSplash = function setSplash(){
