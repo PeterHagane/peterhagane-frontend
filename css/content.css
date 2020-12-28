@@ -9,6 +9,41 @@
     align-items: center; */
 }
 
+#splash{
+    height: 100vh;
+}
+
+#splash h1,h2,h3,h4,h5,h6,div,img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#splash h4{
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+}
+
+.splashmenu{
+    display: flex;
+    flex-direction: none;
+    padding: 0;
+}
+
+.splashmenu li{
+    height: 2.5em;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: center;
+      margin: 0.5em;
+      animation: ease-in fadeIn 0.5s;
+      user-select: none;
+  }
+
+#splashlogo{
+    width: 80%;
+}
+
 #about{
 
 }
@@ -21,9 +56,6 @@
 
 }
 
-#splash{
-
-}
 
 #splash, #about, #projects, #contact{
     max-width: 100%;
@@ -48,9 +80,8 @@
 }
 
 .card{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.07);
     height: auto;
-    
     padding: 1em 1em 1em 1em;
     margin-left: 1em;
     margin-right: 1em;

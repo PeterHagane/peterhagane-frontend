@@ -1,5 +1,6 @@
 :root {
     --white: #E8E8E8;
+    --lightgrey: #accaca;
     --grey: #8A8E8E;
     --purple: #453F52;
     --orange: #CA8957;
@@ -14,6 +15,9 @@
 }
 *{
     font-family: 'Montserrat', Fallback, sans-serif;
+    -webkit-hyphens: none;
+-moz-hyphens: none;
+hyphens: none;
 }
 
 /* .clip-text{
@@ -29,11 +33,11 @@ body{
 
 a:link {
     text-decoration: none;
-    color:var(--white);
+    color:var(--lightgrey);
 }
 a:visited {
     text-decoration: none;
-    color:var(--white);
+    color:var(--lightgrey);
 }
 a:hover {
     text-decoration: none;
@@ -64,15 +68,15 @@ h3{
     margin-left: -0.55%;
 }
 h4{
-    font-size: 3vw;
+    font-size: 4vw;
     margin-left: -0.4%;
 }
 h5{
-    font-size: 2vw;
+    font-size: 4vw;
     margin-left: 0vw;
 }
 h6{
-    font-size: 1.5vw;
+    font-size: 3vw;
     margin-left: 0vw;
 }
 p{
@@ -103,7 +107,7 @@ p{
         margin-left: -0.7%;
     }
     h3{
-        font-size: 55px;
+        font-size: 44px;
         margin-left: -0.55%;
     }
     h4{
@@ -111,11 +115,11 @@ p{
         margin-left: -0.4%;
     }
     h5{
-        font-size: 22px;
+        font-size: 33px;
         margin-left: 0%;
     }
     h6{
-        font-size: 18px;
+        font-size: 22px;
         margin-left: 0%;
     }
     p{
@@ -142,6 +146,7 @@ p{
 ul{
     display: flex;
     list-style-type: none;
+    padding: 0;
 }
 
 hr{

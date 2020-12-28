@@ -8,6 +8,7 @@
 
 .navbarcontainer{
     z-index: 10;
+    height: 5em;
     top: 0;
     left: 0;
     display: flex;
@@ -17,6 +18,10 @@
     /* background: linear-gradient(90deg, rgb(158, 158, 158,0.1) 0%, rgb(95, 165, 159,0) 22%); */
     /* background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%); */
     /* visibility: hidden; */
+}
+
+.navbarcontainer.gone{
+  display: none;
 }
 
 .navbarcontainer.fade-in{
@@ -85,6 +90,7 @@
   .menu{
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .menu li{
@@ -101,6 +107,7 @@
 }
 
 .menu li{
+  height: 2.5em;
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
