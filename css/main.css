@@ -16,8 +16,8 @@
 *{
     font-family: 'Montserrat', Fallback, sans-serif;
     -webkit-hyphens: none;
--moz-hyphens: none;
-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 
 /* .clip-text{
