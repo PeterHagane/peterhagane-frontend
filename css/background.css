@@ -23,6 +23,7 @@
   background: linear-gradient(90deg, rgb(35, 31, 104) 0%, rgb(47, 94, 102) 100%);
 } */
 
+/* diagonal lines */
 .bg {
   animation:slide 100s linear infinite alternate;
   background-image: linear-gradient(-60deg,rgba(35, 31, 104, 0.1) 33%, rgba(4, 3, 17, 0.1) 33%);
@@ -52,4 +53,14 @@
   100% {
     transform:translateX(25%);
   }
+}
+/* end diagonal lines */
+
+/* particles */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  z-index: 0;
 }
