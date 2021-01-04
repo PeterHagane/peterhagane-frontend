@@ -62,7 +62,7 @@
 
 
 #about{
-    margin-top: 0px;
+    margin-top: calc(45vh);
     margin-bottom: 200px;
     display:flex;
     justify-content: center;
