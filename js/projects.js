@@ -19,7 +19,7 @@ fetch(devProjUrl + '/dev-projects').then(function (response) {
 
 function renderProjects() {
     var projectHTML = `
-    <h2>Projects</h2>
+    <h2 class="text-gr">Projects</h2>
     <div class="cards flexRow flexCenter">
     ${setProjectCards()}
     </div>

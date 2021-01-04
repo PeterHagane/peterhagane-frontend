@@ -62,7 +62,16 @@
 
 
 #about{
+    margin-top: 0px;
+    margin-bottom: 200px;
+    display:flex;
+    justify-content: center;
+}
 
+#about p{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
 }
 
 #projects{
@@ -73,7 +82,7 @@
 #projects h1,#projects h2,#projects h3,#projects h4,#projects h5,#projects h6{
     /* margin-left: 0; */
 }
-#projects h1, #projects h2{
+#projects h1, #projects h2, #about h1, #about h2{
     margin-left: auto;
     margin-right: auto;
     margin-top: 33px;
