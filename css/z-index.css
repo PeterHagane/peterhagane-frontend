@@ -15,11 +15,11 @@
 }
 
 #loading{
-    z-index: 10;
+    z-index: 9;
 }
 
 .navbarcontainer{
-    z-index: 9;
+    z-index: 10;
 }
 
 .splashtitle{

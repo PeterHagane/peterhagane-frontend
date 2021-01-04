@@ -19,8 +19,10 @@ fetch(devProjUrl + '/dev-projects').then(function (response) {
 
 function renderProjects() {
     var projectHTML = `
-<div class="cards flexRow flexCenter">
+<div class="flexcolumn">
+    <div class="cards flexRow flexCenter">
     ${setProjectCards()}
+    </div>
 </div>
 `
     function setProjectCards() {
@@ -36,7 +38,10 @@ function renderProjects() {
                 <div class="card flexColumn">
                 <img src="${devProjUrl + json.pimg[0].url}"></img>
                 <h4>${json.ptitle}</h4>
-                <div class="flexRow">${tags}</div>
+                <p>${json.pdesc}</p>
+                <div class="flexfill">
+                </div>
+                <div class="flexRow flex">${tags}</div>
                 </div>
                 `
                 console.log(json.ptitle);
@@ -46,7 +51,7 @@ function renderProjects() {
         } catch (error) {
             console.log("Error reading JSON object: " + error);
         }
-
+        // pHTML += `<div class="cardfill"></div>`
         return pHTML;
     }
 

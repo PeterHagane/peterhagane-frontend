@@ -43,17 +43,18 @@ var splashmenu = document.getElementById("splashmenu");
 const scrollelement = document.getElementById("scrollelement");
 
 var unscrolled = function(){
-    navbarcontainer.classList.add("hidden");
-    projects.classList.remove("slideIn");
-    splashmenu.classList.add("hidden");
-    // navbarcontainer.classList.toggle("hidden");
+    // navbarcontainer.classList.add("hidden");
+    // projects.classList.remove("slideIn");
+    // splashmenu.classList.add("hidden");
+    navbarcontainer.classList.toggle("hidden");
+    navbarcontainer.classList.toggle("short");
     // splash.classList.toggle("fullheight");
     // splash.target.style.display = "none";
 
 
 }
 var scrolled = function(){
-    console.log("Scrolling down - show navbar, show projects, hide menu, reduce height of splash");
+    // console.log("Scrolling down - show navbar, show projects, hide menu, reduce height of splash");
     navbarcontainer.classList.remove("hidden");
     splash.classList.add("short");
 }

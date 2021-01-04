@@ -10,20 +10,30 @@
 }
 
 #splash{
-    height: 100vh;
-    animation: ease-in fadeIn 0.5s;
+    height: 55vh;
+    padding-top: 11vh;
 }
 
 #splash.short{
-    height: 55vh;
+    /* height: 33vh;
     animation: normal;
-    animation: ease-out slideOut 1s;
+    animation: ease-out slideOut 1s; */
 }
 
-#splash h1,h2,h3,h4,h5,h6,div,img{
+#splash.tall{
+    /* height: 55vh;
+    animation: ease-in slideIn 1s; */
+}
+
+#projects h1,#projects h2,#projects h3,#projects h4,#projects h5,#projects h6{
+    /* margin-left: 0; */
+}
+
+#splash div,#splash img,#splash h1,#splash h2,#splash h3,#splash h4,#splash h5,#splash h6{
     margin-left: auto;
     margin-right: auto;
 }
+
 
 #splash h4, #splash h3,#splash h2{
     margin-top: 1em;
@@ -60,7 +70,14 @@
 }
 
 #projects{
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#projects p{
+    /* white-space:nowrap; */
+    /* overflow:hidden;
+    text-overflow:ellipsis; */
 }
 
 #contact{
@@ -72,14 +89,7 @@
     max-width: 100%;
     margin-left: 2vh;
     margin-right: 2vh;
-        
 }
-
-#projects img{
-    width: 100%;
-    
-}
-
 .graphic{
     opacity: 0.3;
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
@@ -87,7 +97,10 @@
 }
 
 .cards{
-
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .card{
@@ -100,7 +113,33 @@
     border-radius: 0.5em;
     color: var(--white);
     -webkit-text-fill-color: var(--white);
+    min-height: 400px;
+    min-width:300px;
+    max-width: 300px; 
 }
+
+.card img{
+    object-fit: contain;
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.cardfill{
+    min-height: 400px;
+    min-width:300px;
+    max-width: 300px;
+    padding: 1em 1em 1em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+/* .card > *:nth-last-child(1){
+    justify-self: end;
+} */
+
 
 @media screen and (min-width: 40em) {
     .card {
@@ -110,13 +149,11 @@
     .cards{
        display: flex;
        flex-wrap: wrap;
-       justify-content: center;
        align-items: stretch;
     }
     
 }
 @media screen and (min-width: 60em) {
-
     .card {
         flex: 0 1 calc(25% - 2.5em);
     }
@@ -148,10 +185,9 @@
   }
   @keyframes slideOut {
     from {
-    height: 100vh;
-    }
-    to {
     height: 55vh;
     }
+    to {
+    height: 33vh;
+    }
   }
-  
