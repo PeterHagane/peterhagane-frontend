@@ -35,6 +35,8 @@
 body{
     /* background: rgb(255,255,250); */
     background: var(--mid-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
 }
 
