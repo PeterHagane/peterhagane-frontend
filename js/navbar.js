@@ -47,17 +47,18 @@ var unscrolled = function(){
     // navbarcontainer.classList.add("hidden");
     // projects.classList.remove("slideIn");
     // splashmenu.classList.add("hidden");
-    navbarcontainer.classList.toggle("hidden");
-    navbarcontainer.classList.toggle("short");
+    navbarcontainer.classList.add("hidden");
+    // splash.classList.toggle("short");
     // splash.classList.toggle("fullheight");
     // splash.target.style.display = "none";
-
+  console.log("unscrolled");
 
 }
 var scrolled = function(){
     // console.log("Scrolling down - show navbar, show projects, hide menu, reduce height of splash");
     navbarcontainer.classList.remove("hidden");
-    splash.classList.add("short");
+    console.log("scrolled");
+    // splash.classList.add("short");
 }
 
 
