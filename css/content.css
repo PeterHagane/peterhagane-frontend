@@ -25,10 +25,6 @@
     animation: ease-in slideIn 1s; */
 }
 
-#projects h1,#projects h2,#projects h3,#projects h4,#projects h5,#projects h6{
-    /* margin-left: 0; */
-}
-
 #splash div,#splash img,#splash h1,#splash h2,#splash h3,#splash h4,#splash h5,#splash h6{
     margin-left: auto;
     margin-right: auto;
@@ -72,6 +68,16 @@
 #projects{
     margin-left: auto;
     margin-right: auto;
+}
+
+#projects h1,#projects h2,#projects h3,#projects h4,#projects h5,#projects h6{
+    /* margin-left: 0; */
+}
+#projects h1, #projects h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+    margin-bottom: 33px;
 }
 
 #projects p{
