@@ -10,8 +10,8 @@
 }
 
 #splash{
-    height: 55vh;
-    padding-top: 11vh;
+    height: 66vh;
+    padding-top:33vh;
 }
 
 #splash.short{
@@ -62,7 +62,7 @@
 
 
 #about{
-    margin-top: calc(45vh);
+    /* margin-top: calc(45vh); */
     margin-bottom: 200px;
     display:flex;
     justify-content: center;
@@ -189,7 +189,7 @@
         
     }
 } */
-
+/* 
 @keyframes slideIn {
     from {
     height: 0em;
@@ -205,4 +205,4 @@
     to {
     height: 33vh;
     }
-  }
+  } */
