@@ -29,17 +29,33 @@ function renderProjects() {
         try {
             for (i = 0; i < devProjects.length; i++) {
                 let json = devProjects[i];
+
                 let tags = "";
                 for (v = 0; v < json.dev_tags.length; v++) {
                     tags += `<div class="tag"> ${json.dev_tags[v].tname}</div>`
                 }
+                
+                let projlink ="";
+                let replink = "";
+                for (v = 0; v < json.purls.urls.length; v++) {
+                    if(json.purls.urls[v].includes("github") || json.purls.urls[v].includes("gitlab")){
+                        replink += `<a class="repository" href="${json.purls.urls[v]}"><img class="repositoryimg" src="img/gitlab.svg"></img></a>`
+                    }
+                    else if(json.purls.urls[v] != ""){
+                        projlink += json.purls.urls[v];
+                    }
+                    else{
+                        projlink = "";
+                    }                    
+                }
+
                 pHTML += `
                 <div class="card flexColumn">
                 <img src="${devProjUrl + json.pimg[0].url}"></img>
-                <h4>${json.ptitle}</h4>
+                <h4><a href="${projlink}">${json.ptitle}</a></h4>
                 <p>${json.pdesc}</p>
-                <div class="flexfill">
-                </div>
+                <div class="flexfill"></div>
+                ${replink}               
                 <div class="flexRow flex">${tags}</div>
                 </div>
                 `

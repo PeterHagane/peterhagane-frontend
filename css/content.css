@@ -82,7 +82,7 @@
 #projects h1,#projects h2,#projects h3,#projects h4,#projects h5,#projects h6{
     /* margin-left: 0; */
 }
-#projects h1, #projects h2, #about h1, #about h2{
+#projects h1, #projects h2, #about h1, #about h2, #contact h1, #contact h2{
     margin-left: auto;
     margin-right: auto;
     margin-top: 33px;
@@ -117,6 +117,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .card{
@@ -144,8 +146,8 @@
 
 .cardfill{
     min-height: 400px;
-    min-width:300px;
-    max-width: 300px;
+    min-width:250px;
+    max-width: 250px;
     padding: 1em 1em 1em 1em;
     margin-left: 1em;
     margin-right: 1em;
@@ -156,6 +158,19 @@
     justify-self: end;
 } */
 
+.repositoryimg{
+    height: auto;
+    max-height: auto !important;
+    margin: 3px 0px 3px 0px !important;
+}
+
+.repository{
+    max-width: 100px;
+    height: 50px;
+    max-height: 50px !important;
+    margin: 0px 0px 0px 0px !important;
+    
+}
 
 @media screen and (min-width: 40em) {
     .card {
