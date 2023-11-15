@@ -45,6 +45,12 @@ body{
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color:var(--lightgrey);
+    cursor: pointer;
+}
+
 a:link {
     text-decoration: none;
     color:var(--lightgrey);

@@ -25,41 +25,80 @@
 
 /* diagonal lines */
 .bg {
-  animation:slide 66s linear infinite alternate;
-  background-image: linear-gradient(-60deg, rgba(0, 0, 0, 0.04) 55%,  rgba(255, 0, 0, 0.04) 55%, rgba(255, 255, 255, 0.03) 55%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  margin-left:10px;
+  animation: slide 66s linear infinite alternate;
+  background-image: linear-gradient(-60deg, rgba(0, 0, 0, 0.04) 55%, rgba(255, 0, 0, 0.04) 55%, rgba(255, 255, 255, 0.03) 55%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  margin-left: 10px;
+  transition: all 4s;
 }
 
 .bg2 {
-  animation:slide 33s ease-in-out infinite alternate;
-  animation-direction:alternate-reverse;
+  animation: slide 33s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
 
 }
 
 .bg3 {
-  animation-duration:66s;
+  animation-duration: 66s;
 }
 
-.bg4{
-  animation:slide 33s ease-in-out infinite alternate;
-  animation-direction:alternate-reverse;
+.bg4 {
+  animation: slide 33s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
+
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
+
 /* end diagonal lines */
+
+.hide {
+  
+  animation: ease-in fadeOut 2s;
+  animation-iteration-count: 1;
+  display: none;
+}
+
+.show {
+  
+  /* display: none; */
+  /* visibility: hidden; */
+  animation: ease-out fadeIn 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
 
 /* particles */
 /* #particles-js {

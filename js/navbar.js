@@ -1,5 +1,6 @@
 var html = `
 <div class="navbarleft">
+  <a onclick=toggleBackgroundAnimation()>Toggle background</a>
 <div>
     
 </div>
@@ -9,6 +10,7 @@ var html = `
     <div class="menu-btn__burger"></div>
 </div>
 </div>
+
 
 <div class="navbarright">
 <ul class="menu">

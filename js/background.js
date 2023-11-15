@@ -1,3 +1,27 @@
+function toggleBackgroundAnimation(){
+    var bg = document.getElementById("bg");
+
+    if(bg.className.includes("hide")){
+        bg.className = "show"
+        return
+    }
+
+    if(bg.className.includes("show")){
+        bg.className = "hide"
+        return
+    }
+}
+
+function renderBackground() {
+    let aHTML = `
+    <div class="bg"><div class="bg bg2"><div class="bg bg3"><div class="bg bg4"></div></div></div></div>
+    `
+    var bg = document.getElementById("bg");
+    bg.innerHTML = aHTML;
+}
+
+renderBackground();
+
 // //particle bg
 // var settings = {
 //     "particles": {
